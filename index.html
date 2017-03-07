@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+  
+<title>Max Story Plot Generator</title>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <style>
+        .myfont {
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+<body>
+
+<div class="w3-container w3-red">
+  <h2 class="myfont">Story Idea Generator</h2>
+</div>
+    
+    
+<script>
+
+
+var ideas = [];
+
+var ideas2 = [];
+
+var ideas3 = [];
+
+var verb1 = [];
+var verb2 = [];
+var noun1 = [];
+var noun2 = [];
+
+var ideas4 = [];
+    
+var combine1 = [];
+
+
+ideas[0] = "A lonely ";
+ideas[1] = "A angry ";
+ideas[2] = "A mad ";
+ideas[3] = "A washed-up ";
+ideas[4] = "A greedy ";
+ideas[5] = "A plucky ";
+ideas[6] = "A blind ";
+ideas[7] = "A stay-at-home ";
+ideas[8] = "A retired ";
+ideas[9] = "An Elven ";
+ideas[10] = "A talking ";
+ideas[11] = "An unusually small ";
+ideas[12] = "A cute ";
+ideas[13] = "A talkative ";
+ideas[14] = "A deaf ";
+    
+ideas2[0] = "superhero ";
+ideas2[1] = "student ";
+ideas2[2] = "policeman ";
+ideas2[3] = "painter ";
+ideas2[4] = "filmmaker ";
+ideas2[5] = "alien ";
+ideas2[6] = "wizard ";
+ideas2[7] = "parent ";
+ideas2[8] = "office worker ";
+ideas2[9] = "patient ";
+ideas2[10] = "teacher ";
+ideas2[11] = "monster ";
+ideas2[12] = "unemployed person ";
+ideas2[13] = "zombie ";
+ideas2[14] = "politician ";
+
+verb1[0] = "discovers ";
+verb1[1] = "creates ";
+verb1[2] = "is gifted ";
+verb1[3] = "finds ";
+verb1[4] = "destroys ";
+verb1[5] = "looks at ";
+
+noun1[0] = "a time machine ";
+noun1[1] = "a magic wand ";
+noun1[2] = "a cat ";
+noun1[3] = "a dog ";
+
+verb2[0] = "falls in love with ";
+verb2[1] = "rescues ";
+verb2[2] = "fights ";
+
+noun2[0] = "a cult ";
+noun2[1] = "a vampire ";
+noun2[2] = "a rock star";
+    
+
+ideas3[0] = "gets his/her own reality show";
+ideas3[1] = "writes an award winning film";
+ideas3[2] = "learns the true meaning of friendship";
+ideas3[3] = "overcomes a fear of flying";
+ideas3[4] = "joins a lost tribe of headhunters";
+ideas3[5] = "founds a new religion";  
+ideas3[6] = "dreams of becoming a rock star";
+
+ideas4[0] = " in the jungles of the Amazon.";
+ideas4[1] = " with the help of a baby triceretops.";
+ideas4[2] = " while looking for the fountain of youth.";
+ideas4[3] = " while serving time for tax evasion.";
+ideas4[4] = " when zombies attack Wall Street.";
+ideas4[5] = " after the loss of a family fortune.";
+ideas4[6] = " during the worst snow storm in a century.";
+ideas4[7] = " on the eve of the apocalypse."; 
+ideas4[8] = " after dropping out of flight instructor school.";
+ideas4[9] = " after winning the lottery.";
+ideas4[10] = " during a summer vacation on the Moon.";
+ideas4[11] = " after an alien rents his/her basement apartment.";
+ideas4[12] = " in the checkout line at a local grocery store.";
+    
+combine1[0] = [ [verb1[Math.round((verb1.length - 1) * Math.random())]] + [noun1[Math.round((noun1.length - 1) * Math.random())]] ];
+combine1[1] = [ [verb2[Math.round((verb1.length - 1) * Math.random())]] + [noun2[Math.round((noun1.length - 1) * Math.random())]] ];
+combine1[2] = ideas3[Math.round((ideas3.length - 1) * Math.random())];    
+
+
+
+var Quote1 = ideas[Math.round((ideas.length - 1) * Math.random())];
+var Quote2 = ideas2[Math.round((ideas2.length - 1) * Math.random())];
+var Quote4 = ideas4[Math.round((ideas4.length - 1) * Math.random())];
+var Quote3 = combine1[Math.round((combine1.length - 1) * Math.random())];
+
+document.write("<br><b class='w3-margin w3-padding-large'>Your randomly generated Plot Idea is:</b>");
+
+document.write("<div class='w3-panel w3-leftbar w3-sand w3-xlarge myfont w3-margin'><p class='w3-margin w3-padding-large'><i>"+Quote1+Quote2+Quote3+Quote4+"</b></p></div>");
+
+</script>
+
+<form class="w3-margin-left">
+
+     <input class="w3-button w3-black w3-hover-white" type="button" VALUE="New Plot"
+
+       onClick="window.location.reload();return false;">
+
+</form>
+<p class="myfont w3-margin">
+Max Rushent 2017
+    </p>
+
+</body>
+</html>
